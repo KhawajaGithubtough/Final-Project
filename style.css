@@ -6,7 +6,9 @@
 
 
 
-
+.modal {
+    overflow-y:auto;
+  }
 
 
 

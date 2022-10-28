@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,22 @@
     <!--link CSS here-->
     <link rel="stylesheet" href="style.css">
     <!--bootstrap-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/scss/bootstrap-rtl-fix/_modal.scss">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/scss/bootstrap/_forms.scss">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/scss/bootstrap-rtl-fix/_modal.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/scss/bootstrap/_forms.scss">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<script type="text/javascript">
-    $(function() {
-        $('#datepicker').datepicker();
-    });
-</script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker').datepicker();
+        });
+    </script>
 
 </head>
+
 <body>
     <!--Navigation-->
 
@@ -28,14 +32,10 @@
         <div class="container">
             <a href="#" class="navbar-brand">Task Planner</a>
             <!-- modal logic here -->
-            <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navmenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
 
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
 
@@ -63,37 +63,36 @@
     </nav>
 
     <!--Header-->
-<section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start ">
-    <div class="container">
-        <div class="d-sm-flex align-item-center justify-content-between">
-            <div>
-                <h1><span class="text-warning">Plan </span>Your Tasks the better way</h1>
-            <p class="lead my-4">
-                We have the best features avilable for you to plan, monitor and manage your taks.
-                And the best thing about our is that it is completel FREE!
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start ">
+        <div class="container">
+            <div class="d-sm-flex align-item-center justify-content-between">
+                <div>
+                    <h1><span class="text-warning">Plan </span>Your Tasks the better way</h1>
+                    <p class="lead my-4">
+                        We have the best features avilable for you to plan, monitor and manage your taks.
+                        And the best thing about our is that it is completel FREE!
 
-            </p>
-            <button class="btn btn-primary btn-lg" data-bs-toggle="modal"
-            data-bs-target="#AddTask"
-            >Add Your Task Here</button>
-            </div>
-            
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#AddTask">Add Your
+                        Task Here</button>
+                </div>
+
                 <img class="img-fluid w-50 d-none d-sm-block" src="images/showcase.svg" alt="">
-            
-        </div>
-    </div>
-</section>
 
-<!-- The center Section of page-->
-
-<section class="bg-primary text-light p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-6 left">
-                <h3 >
-                    See Your Tasks have Added Below!
-                </h3>
             </div>
+        </div>
+    </section>
+
+    <!-- The center Section of page-->
+
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-6 left">
+                    <h3>
+                        See Your Tasks have Added Below!
+                    </h3>
+                </div>
                 <div class="col-md-6 col-xs-6 right">
                     <h1>
                         <img class="img-rounded" src="images/bx-task.svg" alt="">
@@ -105,212 +104,291 @@
                 </div>
             </div>
 
-    </div>
-</section>
+        </div>
+    </section>
 
-<!--Cards using Grid-->
+    <!--Cards using Grid-->
 
-<section class="bg-dark p-5">
-    <div class="container">
-        <div class="row text-center g-4">
-            <div class="col-md">
-                <div class="card bg-warning text-light">
-                   
-                    <div class="card-body text-center">
-                        <h3 class="card-title mb-3">Your Task Details</h3>
-                        <div class="col-md justify-content-start">
-                            <ul class="list-group">
-                                <li class="list-group-item active"><h5>Your Task Details</h5></li>
-                                <li class="list-group-item list-group-item-success"><b>Name</b><br>Liam Nesson</li>
-                                <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn HTML and CSS within no time!</li>
-                                <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020</li>
-                                <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Joe Biden</li>
+    <section class="bg-dark p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-warning text-light">
+
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Your Task Details</h3>
+                            <div class="col-md justify-content-start">
+                                <ul class="list-group">
+                                    <li class="list-group-item active">
+                                        <h5>Your Task Details</h5>
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Name</b><br>Liam Nesson</li>
+                                    <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn
+                                        HTML and CSS within no time!</li>
+                                    <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Joe Biden
+                                    </li>
 
 
-                              </ul>
+                                </ul>
+
+                            </div>
+
+
+
+
 
                         </div>
-                        
-
-
-
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="card bg-warning text-light">
-                    <div class="card-body text-center">
-                        <h3 class="card-title mb-3">Your Task Details</h3>
-                        <div class="col-md justify-content-start">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item active"><h5>Your Task Details</h5></li>
-                                <li class="list-group-item list-group-item-success"><b>Name</b><br>Tim Burton</li>
-                                <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn HTML and CSS within no time!</li>
-                                <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020</li>
-                                <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Jim Carrey</li>
-
-
-                              </ul>
-
-                        </div>
-                        
-
-
-
 
                     </div>
-
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="card bg-warning text-light">
-                    <div class="card-body text-center">
-                        <h3 class="card-title mb-3">Your Task Details</h3>
-                        <div class="col-md justify-content-start">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item active"><h5>Your Task Details</h5></li>
-                                <li class="list-group-item list-group-item-success"><b>Name</b><br>Ronald Regan</li>
-                                <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn HTML and CSS within no time!</li>
-                                <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020</li>
-                                <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Burnei Sanders</li>
+                <div class="col-md">
+                    <div class="card bg-warning text-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Your Task Details</h3>
+                            <div class="col-md justify-content-start">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item active">
+                                        <h5>Your Task Details</h5>
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Name</b><br>Tim Burton</li>
+                                    <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn
+                                        HTML and CSS within no time!</li>
+                                    <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Jim Carrey
+                                    </li>
 
 
-                              </ul>
+                                </ul>
+
+                            </div>
+
+
+
+
 
                         </div>
-                        
-
-
-
 
                     </div>
-
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="card bg-warning text-light">
-                    <div class="card-body text-center">
-                        <h3 class="card-title mb-3">Your Task Details</h3>
-                        <div class="col-md justify-content-start">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item active"><h5>Your Task Detail Here</h5></li>
-                                <li class="list-group-item list-group-item-success"><b>Name</b><br>Hillary Clinton</li>
-                                <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn HTML and CSS within no time!</li>
-                                <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020</li>
-                                <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Scott Morrison</li>
+                <div class="col-md">
+                    <div class="card bg-warning text-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Your Task Details</h3>
+                            <div class="col-md justify-content-start">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item active">
+                                        <h5>Your Task Details</h5>
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Name</b><br>Ronald Regan</li>
+                                    <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn
+                                        HTML and CSS within no time!</li>
+                                    <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Burnei
+                                        Sanders</li>
 
 
-                              </ul>
+                                </ul>
+
+                            </div>
+
+
+
+
 
                         </div>
-                        
-
-
-
 
                     </div>
-
                 </div>
-            </div>
-            <div class="col-md">
-                <div class="card bg-warning text-light">
-                    <div class="card-body text-center">
-                        <h3 class="card-title mb-3">Your Task Details</h3>
-                        <div class="col-md justify-content-start">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item active"><h5>Your Task Details</h5></li>
-                                <li class="list-group-item list-group-item-success"><b>Name</b><br> Cate Winslet</li>
-                                <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn HTML and CSS within no time!</li>
-                                <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020</li>
-                                <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Tom Hanks</li>
+                <div class="col-md">
+                    <div class="card bg-warning text-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Your Task Details</h3>
+                            <div class="col-md justify-content-start">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item active">
+                                        <h5>Your Task Detail Here</h5>
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Name</b><br>Hillary Clinton
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn
+                                        HTML and CSS within no time!</li>
+                                    <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Scott
+                                        Morrison</li>
 
 
-                              </ul>
+                                </ul>
+
+                            </div>
+
+
+
+
 
                         </div>
-                        
-
-
-
 
                     </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-warning text-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Your Task Details</h3>
+                            <div class="col-md justify-content-start">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item active">
+                                        <h5>Your Task Details</h5>
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Name</b><br> Cate Winslet
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Task Details</b><br> Learn
+                                        HTML and CSS within no time!</li>
+                                    <li class="list-group-item list-group-item-success"><b>Due Date</b><br>12/05/2020
+                                    </li>
+                                    <li class="list-group-item list-group-item-success"><b>Assigned To</b><br>Tom Hanks
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <!--Modal Code Here-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="AddTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Your Task Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Your Name</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Default"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Your Details</span>
+                            </div>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="div input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Due Date</span>
+                            </div>
+
+                            <input id="DueDate" class="form-control" type="date" />
+                        </div>
+
+                        <div class="div input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Assigned To</span>
+                            </div>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Select Who Do You Want to Assign</option>
+                                <option value="1">Liam Nesson</option>
+                                <option value="2">Tom Hanks</option>
+                                <option value="3">Hillary Clinton</option>
+                                <option value="3">Kate Winslet</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="div input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Status</span>
+                            </div>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Select Task Status</option>
+                                <option value="1">Started </option>
+                                <option value="2">In Progress</option>
+                                <option value="3">Completed</option>
+                                <option value="3">Verified</option>
+        
+                            </select>
+                        </div>
+
+
+
+
+                    </form>
 
                 </div>
-            </div>
+
+                
+
             
 
 
+            </div>
+
         </div>
+
+
 
     </div>
-</section>
-<footer>
+    
 
-</footer>
-
-<!--Modal Code Here-->
-
-<!-- Modal -->
-<div class="modal fade" id="AddTask" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-
-            <p class="lead">Add Your Task Details Here</p>
-            <form action="">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-default">Your Name</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                  </div>
-                
-                    <div class="input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">Your Details</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                        
-                        <div class="div input-group input-group-sm mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Your Name</span>
-                              </div>
-
-                           <input id="DueDate" class="form-control" type="date" />
-                        </div>
-                        
-                      
-                    
-                
-            </form>
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
+ </div>
+   </div>
     </div>
-  </div>
 
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 </body>
+
 </html>
